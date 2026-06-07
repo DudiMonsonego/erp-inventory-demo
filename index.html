@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise ERP - Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>ERP Systems - Inventory Management</h1>
+    <p>Data synchronization interface between Backend API and Frontend services.</p>
+    
+    <button onclick="fetchAllItems()">View All Inventory</button>
+    <button class="alert-btn" onclick="fetchLowStockItems()">View Low Stock Alerts</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Part Number</th>
+                <th>Description</th>
+                <th>Main Warehouse</th>
+                <th>Distribution Center</th>
+                <th>Min Threshold</th>
+            </tr>
+        </thead>
+        <tbody id="inventory-table-body">
+            </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
