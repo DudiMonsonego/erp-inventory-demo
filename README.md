@@ -40,3 +40,34 @@ Follow these streamlined operations to get the global dashboard running on your 
 Ensure your local environment configuration includes a globally mapped **PHP 8.2+** engine. Verify execution using terminal runtime arguments:
 ```bash
 php -v
+```
+
+### Steps
+
+**1. Clone the repository:**
+```bash
+git clone https://github.com/DudiMonsonego/erp-inventory-demo.git
+cd erp-inventory-demo
+```
+
+**2. Start the PHP built-in development server:**
+```bash
+php -S localhost:8000
+```
+
+**3. Open the dashboard in your browser:**
+```
+http://localhost:8000
+```
+
+### API Endpoints
+
+| Endpoint | Description |
+|---|---|
+| `GET /api.php` | Returns the full inventory dataset |
+| `GET /api.php?filter=low_stock` | Returns only items with stock below the minimum threshold |
+
+---
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
